@@ -8,32 +8,231 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Noto+Sans:wght@200&family=Open+Sans&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h2>
-          PI<span style="color: red">ZZ</span>A F<span style="color: red"
-            >OO</span
-          >D.
-        </h2>
-        <nav id="nav">
-          <i id="cross" class="fa-solid fa-x"></i>
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
-          <a href="#">MENU</a>
-        </nav>
-        <div id="bar">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </header>
-      <div class="h1">
-        <h1><span style="color: red">MORE</span> THAN</h1>
-        <h1>JUST PIZZA</h1>
+    <!-- side bar -->
+    <div class="side-bar" id="nav">
+      <i class="fa-solid fa-x" id="cross"></i>
+      <h1>PizzaFood</h1>
+      <div class="side-menu">
+        <a href="#"><i class="fa-solid fa-house menu-icon"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-circle-info menu-icon"></i>About</a>
+        <a href="#"><i class="fa-solid fa-house menu-icon"></i>Wallet</a>
       </div>
-      <button>MENU</button>
+      <div class="logout">
+        <a href="#"
+          ><i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a
+        >
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <div class="header-menu">
+        <i class="fa-solid fa-bars" id="bars"></i>
+        <div class="search">
+          <input type="text" placeholder="What do you want to eat?" />
+          <button id="search">Search</button>
+        </div>
+        <div class="info">
+          <i class="fa-solid fa-cart-shopping" id="cart"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+        </div>
+      </div>
+      <!-- Menu Order -->
+      <div class="menu-order">
+        <h2>Choose Order</h2>
+        <div class="menu">
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza1.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Pepper Pizza</h2>
+              <p class="product-desc">
+                pizza fehe pepper w fromage , bnina 3ale5er
+              </p>
+              <p class="price">13 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza2.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Tomato Pizza</h2>
+              <p class="product-desc">
+                pizza fehe olive + tomato + 7chich, jarab to7sel
+              </p>
+              <p class="price">15 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza3.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Chicken Pizza</h2>
+              <p class="product-desc">
+                pizza bedjej , protein ,behiya leli yetrenew
+              </p>
+              <p class="price">27 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza4.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Tuna Pizza</h2>
+              <p class="product-desc">
+                pizza fromage + olive + ton , mouch 8aliya 3azawali
+              </p>
+              <p class="price">21 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza5.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Cheese Pizza</h2>
+              <p class="product-desc">
+                pizza fromage + olive + pepper + machroum , m7ar7ra
+              </p>
+              <p class="price">26 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pizza6.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Olive Pizza</h2>
+              <p class="product-desc">
+                pizza tomato + olive + fromage , kbira mta3 3ila
+              </p>
+              <p class="price">38 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/lazaniya.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Lazaniya</h2>
+              <p class="product-desc">
+                lazaniya b l7am mafroum , s5oun ya3ml el kif
+              </p>
+              <p class="price">9 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/burger1.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Burger Tomato</h2>
+              <p class="product-desc">
+                burger s5oun , idhoub fel fom , fih tmatem
+              </p>
+              <p class="price">8,5 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/pasta.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Pasta</h2>
+              <p class="product-desc">
+                ma9arouna bejben + tmatem + 5odhra , quantite kbira
+              </p>
+              <p class="price">6,6 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/burger2.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Cheese Pizza</h2>
+              <p class="product-desc">
+                burger fih jben , akber mela5er + l7am mafroum
+              </p>
+              <p class="price">10 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/kebeb.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Kebeb</h2>
+              <p class="product-desc">
+                kebeb 3al grillard , ri7et lef7am , kol plat fih 5 3wedda
+              </p>
+              <p class="price">15 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pic">
+              <img src="img/meat.jpg" />
+            </div>
+            <div class="card-desc">
+              <h2>Meat</h2>
+              <p class="product-desc">
+                l7am 3alouch mechwi 3al f7am + batata mechwiya ta3mal 66 kif
+              </p>
+              <p class="price">12 DT</p>
+              <i class="fa-solid fa-check" id="checked"></i>
+              <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cart view -->
+    <div class="cart-view open" id="slot">
+      <i class="fa-solid fa-x" id="close"></i>
+      <div class="slots"></div>
     </div>
     <script src="app.js"></script>
   </body>
